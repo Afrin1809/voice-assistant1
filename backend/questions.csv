@@ -1,0 +1,206 @@
+question,answer
+What are the main stages of engine manufacturing?,"The major stages are: Design & Simulation Material selection Casting of engine block & cylinder head Heat treatment Machining (CNC turning, milling, boring, honing) Surface treatment & cleaning Sub-assembly (crankshaft, piston, connecting rod) Final engine assembly Testing (leak test, performance test, NVH test) Painting & packing"
+What materials are commonly used for engine components?,Engine block: Cast iron / Aluminium alloy Cylinder head: Aluminium alloy Crankshaft: Forged steel Connecting rod: Forged steel / Powder metal Piston: Aluminium alloy Camshaft: Cast iron / Billet steel
+Why is casting used for the engine block?,"Casting is ideal because: Can produce complex shapes (cooling passages, oil galleries). High strength and durability. Cost-effective for mass production."
+What is the purpose of heat treatment in engine manufacturing?,"Heat treatment improves: Hardness Wear resistance Fatigue strength Dimensional stability Processes include quenching, tempering, normalizing, induction hardening."
+What is cylinder honing?,Honing is a finishing process to: Remove distortions after boring. Create a cross-hatch pattern for better lubrication. Achieve correct surface roughness for piston rings.
+Why are CNC machines used in engine manufacturing?,CNC provides: High precision Consistent quality Complex machining capability High repeatability Reduced manual error
+What tests are done in engine assembly process?,"Leak Test – air pressure test for coolant & oil circuits Cold test – sensors check rotation, timing, compression Hot test / Dyno test – power, torque, fuel consumption, emissions NVH test – noise, vibration, harshness Final visual inspection"
+What is crankshaft balancing?,It ensures the crankshaft rotates smoothly by: Adding or removing material Reducing vibration Preventing bearing wear Improving engine life
+What are common machining defects in engine components?,Burrs Surface roughness out of spec Taper or ovality Tool marks Misalignment Undersize/oversize dimensions
+Why does rust form on machined engine parts?,Rust Due to: Moisture exposure No rust preventive coating Improper storage High humidity Coolant contamination & Coolant concentration Rust Prevention Action: Apply rust preventive oil (RPO) Use VCI bags Maintain humidity < 55% Proper Coolant maintenance Immediate packing after machining
+What is VVT (Variable Valve Timing)?,A technology that adjusts & overlap camshaft timing during running for: Better fuel economy More power Reduced emissions
+What is the difference between diesel and petrol engine manufacturing?,
+Why is torque-to-yield (TTY) bolt used in engines?,"Provides uniform clamping force Prevents head gasket leaks Used in cylinder head, connecting rod caps"
+What is dynamic balancing in engine assembly?,"Balancing rotating parts (crankshaft, flywheel, pulleys) to: Reduce vibration Improve smooth running Reduce wear on bearings"
+What are the test conducted in Assembly FTB( Final Test Bench)?,Final inspection where the engine is tested for: Power Emission Noise/vibration Leakage Sensors & electronic controls Overall performance validation
+What are the critical-to-quality (CTQ) parameters in an engine?,"Key CTQs include: Cylinder bore diameter, taper, and roundness Piston-to-bore clearance Crankshaft runout Valve timing accuracy Injector flow rate & spray pattern Oil pressure & coolant flow rate Combustion chamber volume NVH limits (dB & vibration levels) Failing any CTQ directly affects engine performance and durability."
+What is the role of SPC (Statistical Process Control) in engine manufacturing?,"SPC helps in: Monitoring machining variation Detecting trends before defects occur Reducing scrap Improving process capability (Cp, Cpk) Predicting tool change timing A Cp/Cpk ≥ 1.33 is normally required for critical engine dimensions."
+How do you handle a sudden increase in engine defect rate on the assembly line?,"Stop the line (if critical defect) Perform 3-step triage: Contain → Correct → Prevent Identify defect source (machine, man, material, method) Audit SPC charts & tool life Inspect last OK unit for reference Implement temporary controls (sort, re-inspect) Initiate 8D or root cause analysis Validate corrective actions through capability study"
+How to approach to Root Cause Analysis in engine quality issues.,"Use tools like: 5 Why Analysis Fishbone diagram (Man, Machine, Method, Material, Measurement, Environment) Is-Is Not analysis Pareto analysis Fault Tree Analysis Always verify root cause using data (SPC, CMM, EOL test logs)."
+What tests are done on an engine to ensure sealing quality?,"Air leak test on block & head Pressure decay test Vacuum test Helium sniff test (high precision) End-of-line leak test (oil, coolant, combustion chamber)"
+What are common causes of low compression in a new engine?,Wrong piston rings orientation Excessive cylinder bore wear or roughness Valve leakage Improper head gasket thickness Incorrect cam timing Poor surface finish on cylinder head/block Bore taper/ovality
+How does tool wear affect engine parts quality?,Tool wear causes: Increased surface roughness Dimensional drift Bore taper Heat generation → micro-cracks Burr formation Delayed tool change leads to mass defects.
+What KPIs need to track for engine quality?,"PPM (Parts Per Million defects) First Pass Yield (FPY) Cp, Cpk values for CTQ dimensions Warranty rate Rework & scrap percentage End-of-line failure rate Customer line rejection rate Cost of poor quality (COPQ)"
+What is your method for validating supplier quality of engine components?,"Incoming inspection + AQL sampling PPAP (Production Part Approval Process) Dimensional CMM report Material testing (spectro, hardness, microstructure) Functional tests (injector flow test, valve leakage test) Random destructive testing Supplier process audit"
+How do you ensure traceability in engine manufacturing?,"Barcode or laser-etched serial number Digital manufacturing execution system (MES) Part-level and process-level traceability Store torque data, test data, and machining logs FIFO material flow Traceability helps during warranty failure analysis."
+How do EOL (End of Line) failures help improve engine quality?,EOL failures show: Injector issues Timing misalignment Compression imbalance Oil pressure problems NVH issues Trend analysis → identify process drifts early.
+What is your approach when an engine fails a hot test?,"Immediate tagging → quarantine Review real-time test parameters Check for repeated pattern in past failures Verify assembly sequence & torque data Review injector, timing, compression values Tear-down analysis if needed Implement corrective action and retest"
+How does environment (temperature & humidity) affect engine quality?,High humidity causes: Rust on machined surfaces Dimensional expansion in aluminium Coolant contamination risk Temperature variation affects: Measurement accuracy Material expansion Oil viscosity during tests Stable environment = better accuracy.
+How do you prevent mixing of different engine model variants on the line?,Poka-yoke fixtures Colour coding MES-level digital interlocks Barcode scanning at each stage Variant-specific tooling or torque programs
+what happens when an incorrect torque is applied in engine assembly tightening process?,"Under-torque → leakage, loosening, gasket failure"
+What is FMEA and how do you use it?,"FMEA (Failure Mode & Effects Analysis) identifies: Potential failure modes Severity, occurrence & detection rating RPN (Risk Priority Number) Use FMEA to: Prioritize critical checks Design effective controls Prevent warranty failures"
+Describe how to approach to handling a recurring customer complaint.,"Collect failed parts from customer Conduct strip-down analysis Compare with production test data Run DOE (Design of Experiments) if needed Update control plan, PFMEA Implement long-term corrective actions Verify through accelerated durability tests"
+What are the causes of NVH issue in engines testing?,Crankshaft imbalance Loose fasteners Incorrect valve timing Poor fuel injection timing Worn bearings Unbalanced rotating assembly Excessive piston slap
+What is the role of CMM (Coordinate Measuring Machine) measuring in engine quality?,Used to measure: Bore diameters Flatness Position tolerances Runout Cylinder block geometry Essential for verifying machining accuracy.
+How do you ensure long-term durability of the engine during manufacturing?,Correct material selection Proper heat treatment Accurate machining & clearances Precise lubrication and cooling design Endurance and thermal load tests Strict process control for CTQ dimensions
+Why is carburizing ( Heat treatment process) used for gears?,"To create a hard wear-resistant case with a tough core, improving fatigue strength, pitting resistance, and tooth durability."
+What is the typical case depth for automotive gear carburizing?,"0.6–1.2 mm depending on load, tooth size, and application (e.g., gearbox vs. differential)."
+What are the causes of low case depth after carburizing (Heat treatment process)?,Causes: Low carbon potential in furnace Short soak time Poor gas circulation Wrong temperature (below 920–940°C) Remedies: Correct carbon potential Extend carburizing time Ensure burner & fan performance
+Why does excessive case depth occur?,Cause: High carbon potential Excess carburizing time Incorrect recipe used Remedy: Tune gas ratio Use correct cycle recipe Monitor carbon % continuously
+What causes soft spots on gear teeth after heat treatment?,Causes: Poor furnace circulation Carbide network formation Interrupted quenching Scale formation reducing carbon absorption Remedy: Improve furnace uniformity Use proper quench agitation Maintain surface cleanliness before HT
+What causes gear distortion after heat treatment?,Common causes: Improper fixturing Uneven heating/rapid cooling Nonuniform case depth Material stress Oil quench turbulence Remedies: Use distortion-control fixtures Preheat uniformly Optimize quench flow Use press quench for fine gears
+"What is retained austenite, and why is it a problem?",Retained austenite is untransformed structure after quenching.
+How do you reduce retained austenite in gears?,Sub-zero treatment (−80°C or below) Double tempering Higher quenching severity
+What causes tooth surface oxidation / scale during carburizing?,Causes: Oxygen leakage in furnace Poor gas sealing Wrong dew point Remedies: Check furnace door sealing Maintain protective atmosphere Monitor dew point regularly
+Why is tempering required after quenching?,"To reduce brittleness, relieve stress, and stabilize hardness."
+What happens if tempering temperature is too high?,Hardness drops → gears may fail by pitting and wear.
+What causes uneven hardness on gear teeth?,Causes: Nonuniform case depth Poor quench agitation Incorrect load placement Remedies: Improve basket arrangement Maintain quench oil circulation Ensure uniform furnace temperature
+Why do gears become out-of-round after heat treatment?,Cause: Residual stress from machining Nonuniform cooling Incorrect fixturing Remedy: Stress relieve before HT Use stack press quench Adjust quench agitation pressure
+What causes intergranular oxidation (IGO)?,Cause: High oxygen in furnace atmosphere Improper carbon potential Effect: Reduces fatigue life & case hardness. Remedy: Maintain furnace seals Control dew point & oxygen probe
+Defect: Gear Noise / Whine,Possible Causes: Incorrect gear tooth profile Excessive backlash Poor surface finish after grinding Misalignment of shafts Worn bearings Remedies: Improve gear grinding accuracy Adjust backlash within spec Correct shaft alignment using shims Replace worn bearings Use proper lubrication grade
+Defect: Hard Gear Shifting causes & remedies,Possible Causes: Synchronizer wear or damage Low/contaminated oil Clutch not disengaging fully Bent selector fork Cable/shift linkage misadjustment Remedies: Replace worn synchronizer rings Check/replace gearbox oil Adjust or replace clutch Correct selector fork alignment Adjust shifter cables
+Defect: Gear Slipping Out of Gear,Possible Causes: Worn dog teeth on gear Weak detent spring Worn selector fork Misaligned shift rail Excessive shaft end float Remedies: Replace worn gears Replace detent spring Correct fork wear or re-align Set proper end float with shims
+Cause of Defect: Oil Leakage in gear box,Possible Causes: Worn or damaged shaft oil seals Poor housing surface finish Excessive shaft runout Casting porosity Blocked breather creating internal pressure Remedies: Replace seals with correct lip type Improve housing surface finish (Ra control) Check & correct shaft runout Repair/replace porous housing Clean or replace breather
+what causes for Defect: Gear Pitting / Flaking,Possible Causes: Poor lubrication High contact stress (overload) Incorrect hardness Misalignment Surface defects after machining Remedies: Maintain oil grade & level Re-check load distribution Verify heat treatment hardness Correct alignment Improve grinding accuracy
+Defect: Bearing Noise / Failure,Possible Causes: Insufficient lubrication Contaminated oil (metal particles) Incorrect preload setting Fatigue failure Shaft misalignment Remedies: Ensure proper oil viscosity Flush & refill transmission oil Set correct bearing preload Check and correct shaft alignment Replace faulty bearings
+Defect: Excessive Backlash,Possible Causes: Worn gear teeth Incorrect spacer thickness Poor machining tolerance Shaft bending Bearing play Remedies: Replace worn gears Adjust spacer/shim thickness Improve machining tolerance Check shaft straightness Replace bearings to reduce play
+Defect: Synchronizer Grinding,Possible Causes: Worn synchronizer cone Incorrect friction material Oil contamination Weak blocker ring Damaged hub sleeve Remedies: Replace cones/rings Use correct OEM-specified oil Replace blocker ring Replace hub sleeve if worn
+Defect: Vibration During Driving in gear box,Possible Causes: Unbalanced shafts Bent output shaft Worn bearings Incorrectly installed mounts Gear tooth damage Remedies: Balance shafts Replace bent shaft Replace worn bearings Re-tighten/replace mounts Repair or replace damaged gears
+Defect: Gearbox Overheating,Possible Causes: Low oil level Excessive friction (incorrect oil) Overloaded gearbox Blocked oil passages High ambient temperature without cooling Remedies: Fill correct oil level Use recommended oil grade Reduce overload or re-check vehicle tuning Clean oil passages Improve cooling airflow or add cooler (AT)
+Defect: Gearbox Humming Noise,Possible Causes: Bearing wear Gear meshing problem Low oil level Shaft misalignment Loose bolts Remedies: Replace bearings Adjust gear meshing pattern Check oil level Correct misalignment Tighten bolts to correct torque
+Defect: Clutch Drag Leading to Gear Damage,Possible Causes: Incorrect clutch adjustment Warped clutch plate Faulty release bearing Clutch slave cylinder issues Remedies: Adjust clutch cable/hydraulics Replace clutch plate Replace release bearing Repair hydraulic system
+Defect: Gearbox Unable to Engage gear shifting,Possible Causes: Broken gear selector fork Damaged shift rail Bent gear shift rod Synchronizer ring wear Hub sleeve jam Remedies: Replace selector fork Replace shift rail Straighten or replace shift rod Replace worn synchronizer Replace hub sleeve
+Defect: AT (Automatic Transmission) – Delayed Gear Engagement,Possible Causes: Low ATF fluid Valve body sticking Solenoid failure Weak hydraulic pressure Remedies: Top-up ATF Clean or replace valve body Replace faulty solenoid Fix hydraulic pressure leak
+Defect: AT – Gear Slipping,Possible Causes: Worn clutch packs Dirty ATF Weak oil pump Damaged torque converter Remedies: Replace clutch packs Flush & replace ATF Repair/replace oil pump Replace torque converter
+Defect: Diff (Final Drive) Noise,Possible Causes: Incorrect crown-pinion backlash Worn differential bearings Incorrect tooth contact pattern Low oil Remedies: Adjust backlash Replace bearings Correct tooth contact pattern using shims Fill correct oil quantity
+Defect: Metal Chips in Gearbox Oil what defect happened?,"Possible Causes: Gear tooth chipping Bearing failure Grinding marks not cleaned Poor assembly cleaning Remedies: Inspect gears, replace if needed Replace bearings Improve washing & chip removal process Add fine filtration"
+What is High Pressure Die Casting?,"A high-speed, high-pressure casting process where molten metal is injected into a steel die at 400–1500 bar to produce thin-wall parts with high dimensional accuracy."
+Why is HPDC preferred for automotive components?,"Excellent surface finish High productivity (short cycle times) Accurate, thin-wall components Suitable for mass production"
+What are common defects in High Pressure Die Casting process?,"Porosity (gas porosity, shrink porosity) Cold shuts Misruns Flow lines Flash Soldering (die sticking) Blistering Short shots Hot cracks"
+What causes porosity in casting process HPDC?,Causes: Entrapped air during high-speed injection Excess lubricant spray Poor die venting High melt temperature Inadequate vacuum Remedies: Use proper vacuum levels (<50 mbar) Optimize gate design Reduce lubricant over-spraying Improve die temperature control
+Why does soldering (metal sticking to die) occur?,Causes: High die temperature Low die lubricant quality Poor die steel hardness High melt temperature Remedies: Improve die thermal control Use correct die coating Reduce metal temp Use high-chrome die steel
+What causes cold shuts / misruns in HPDC?,Causes: Metal front cools before filling Low injection speed Low metal temperature Poor gate design Remedies: Increase gate velocity Raise melt temperature Improve runner and gate system Maintain die at optimum 180–250°C
+Why does blistering happen after powder coating or heat treatment?,Cause: Gas trapped inside pores expands during heating. Remedy: Use vacuum die-casting Reduce porosity Use better degassing Lower moisture in die lubricant
+What causes flash in High Pressure Die Casting components?,Cause: Die parting line mismatch Excess injection pressure Worn die locking surfaces Remedy: Rework die parting line Reduce intensification pressure Replace worn locking pins
+Why do High Pressure Die Casting ( HPDC) dies fail prematurely?,Reasons: Thermal fatigue Soldering Cracking due to high pressure Poor die lubrication
+What is the role of vacuum in HPDC?,Vacuum removes air before injection → reduces porosity and improves density and mechanical strength.
+Why is shot sleeve temperature important?,"Too cold → cold shuts Too hot → soldering, porosity Optimum: 180–220°C"
+What is LPDC (Low Pressure Die Casting)?,Molten metal is pushed into the die slowly by applying low pressure (0.3–1 bar) from the bottom through a riser tube.
+Why is LPDC used?,"Excellent metal feeding Very low turbulence Low porosity Ideal for structural & safety components (wheels, engine blocks)"
+What are common defects in LPDC?,Shrink porosity Cold shut Inclusions Oxides Hot tears Gas porosity Mold erosion defects
+Why is porosity lower in LPDC compared to HPDC?,"Because metal rises slowly from bottom → no turbulence, minimal air entrapment → better density."
+What causes shrink porosity in LPDC?,Causes: Insufficient feeding during solidification Wrong pressure curve Riser tube blockage Improper cooling channel layout Remedies: Optimize pressure profile Maintain clean riser tube Use directional solidification
+What causes oxide inclusions in LPDC?,Causes: Poor melt handling Turbulence during transfer Oxide-rich top layer entering die Remedies: Use ceramic foam filters Tilted furnace pouring Minimize dross formation
+What causes cold shut in LPDC?,Causes: Low die temperature Low melt temperature Low filling pressure Remedies: Increase die temperature (200–300°C) Raise melt temp (~710–740°C Al alloys) Optimize fill time
+Why does hot tearing occur in LPDC?,Causes: Poor feeding Restrictive die design Incorrect gating Interrupted pressure feeding
+What causes incomplete filling in LPDC?,Causes: Slow filling pressure Blocked ceramic filters Low melt temperature Remedies: Check pressure ramp Clean/replace filters Increase melt temp
+How do you minimize distortion in LPDC components?,Uniform cooling Balanced die temperature Proper cooling circuits Stress-relief heat treatment
+What is the difference between QA and QC?,"QA (Quality Assurance): Process-oriented Prevents defects Focuses on system, standards, audits, procedures QC (Quality Control): Product-oriented Detects defects Focuses on measurements, inspection, testing"
+What is the purpose of Process QA?,"To ensure manufacturing processes are capable, stable, standardized, and continuously improved, preventing defects before they occur."
+What is the purpose of Process QC?,"To verify the product meets drawing, specification, and customer requirements through inspection and measurement."
+What are the key responsibilities of Process QA?,"Develop and maintain Control Plans Drive PFMEA updates Define process KPIs (ppm, scrap, Cp/Cpk) Conduct Layered Process Audits (LPA) Validate process changes (ECN, CP revision) Approve work instructions & SOPs Ensure process adherence & capability"
+How does Process QA prevent defects?,By identifying risks using PFMEA By creating poka-yoke and controls By ensuring SPC limits are maintained By improving process capability (Cp/Cpk) By conducting regular process audits
+How does Process QA support new product development?,"Participates in APQP Creates control plan & PFMEA Validates PPAP samples Approves tooling, gauges, fixtures Conducts process capability study"
+What tools are used in Process QA?,"PFMEA SPC (X-bar, R chart) Control Plan MSA PDCA DOE Kaizen 5S Layered Process Audit (LPA)"
+Why is PFMEA critical for Process QA?,"It helps identify failure modes, their causes, and controls, driving process improvements before issues reach customer."
+What role does QA play in customer complaints?,Leads root cause problem-solving (8D) Validates corrective actions Ensures systemic actions are implemented Prevents reoccurrence through PFMEA/CP update
+How does QA evaluate process capability?,"By calculating Cp, Cpk on critical characteristics and verifying: Cp ≥ 1.67 for safety Cpk ≥ 1.33 for standard automotive parts"
+What are the key responsibilities of Process QC?,"In-process and final inspection Use gauges, CMM, testers Record process data Detect abnormalities Check special characteristics Ensure defect-free parts leave the station"
+What type of checks does QC perform?,Dimensional inspection Attribute checks Visual checks Functional tests Torque checks Leak tests Hardness checks
+How do QC inspectors ensure accuracy of measurements?,Use calibrated gauges Perform gauge verification Follow inspection frequency Use correct measuring method per WI
+How does QC support defect detection?,Identifies part deviations Segregates and labels defects Stops the line if needed Provides data for root cause analysis
+What QC documents are essential?,Inspection Standard / WI Sampling plan (AQL) Check sheets Calibration records First-off reports Patrol inspection reports
+Why is QC responsible for first-piece inspection?,To validate the process is set correctly before starting mass production.
+How does QC support PPAP?,Measures sample dimensions Prepares inspection reports Supports capability studies Validates special characteristics
+"If a defect reaches the customer, is it QA or QC failure?",Both share responsibility.
+If a part is out of specification during production?,"QC detects the issue. QA investigates root cause, updates PFMEA/CP, and implements corrective action."
+Who is responsible for revising the Control Plan after a process change?,Process QA (QC only follows changes; QA owns the documentation.)
+Who handles MSA studies?,Process QA (QC uses the instruments; QA validates measuring systems.)
+Who decides sampling frequency?,Process QA defines sampling plan. QC executes it.
+Who ensures operator follows SOP?,QA through process audits. QC escalates if deviations found.
+Why is layered process audit critical?,"It confirms process discipline, reduces deviations, and ensures operators follow critical process steps that QC cannot always detect."
+How is QA involved in supplier quality?,Conduct supplier audits Approve PPAP Review process capability Verify corrective actions Monitor supplier PPM
+How is QC involved in supplier inspections?,QC performs: Incoming inspection Measurement of supplier parts Visual and functional checks
+Who verifies error-proofing (poka-yoke) functionality?,QA during audits and process validation.
+What triggers QA to revise PFMEA?,Customer complaints Internal defects Process change Tool change New failure mode identified
+How does QA ensure process stability?,Monitoring SPC charts Corrective action for out-of-control points Setting control limits Conducting audits
+How does QC ensure product traceability?,Using: Barcodes Laser marking Batch tags Inspector stamps 🏆 Who Is Responsible for Quality of Products? – Q&A (Advanced)
+Who is ultimately responsible for the quality of a product?,"Everyone involved in the process is responsible. Process Owners Line Operators Process QA QC Inspectors Production Supervisors Management Quality is a shared responsibility, not only QC’s job."
+Does QC alone own product quality?,No. QC only checks and detects defects.
+Who is responsible for preventing defects?,"Process QA, Process Engineering, and Production. They ensure: PFMEA Control Plan Standardized Work Poka-Yoke Correct machine parameters are in place so defects do not occur."
+Who is responsible for detecting defects?,QC Inspectors through: In-process inspection First-off inspection Final inspection Attribute & dimensional checks
+Who is responsible if a defect escapes to customer?,Shared responsibility: QC: Failed to detect Production: Failed to control process QA: Failed to prevent Engineering: Failed to design robust controls The 8D must address all areas.
+Who is responsible for quality at the machine level?,Machine operator
+Who approves the process before mass production starts?,QA + Process Engineering + Customer (during PPAP)
+Who is responsible for incoming raw material quality?,"Supplier Quality + Incoming QC Supplier Quality → audits, PPAP, capability Incoming QC → checks actual material, dimensions, certificates"
+Who is responsible for maintaining product traceability?,Production + QC
+Who ensures gauges used for quality are accurate?,QA (MSA + Calibration Team)
+Who is responsible for process adherence?,Production operators + Supervisors
+Who is responsible for customer complaints and 8D?,QA leads the 8D Production Engineering Tool Room Supplier Quality all contribute to root cause and corrective action.
+Who is responsible for implementing corrective actions?,Process Owners + Production Team
+Who is responsible for approving rework or concession?,QA + Customer (if CSR requires).
+Who is responsible for ensuring process capability (Cp/Cpk)?,Process QA + Process Engineer
+Who ensures poka-yoke is working correctly?,QA during audits
+Who owns the Control Plan?,Process QA
+Who is responsible for verifying first-off parts?,QC Inspector
+Who ensures machine parameters follow approved standards?,Production operators
+In summary—who is responsible for product quality?,"Everyone. But roles differ: Production → Makes quality QA → Assures and prevents QC → Checks and detects Engineering → Designs robust process Supplier Quality → Ensures supplier compliance Management → Provides systems, culture, resources"
+Purpose of Poka-Yoke (Fool Proof)?,"Poka yoke meaning - Poka-yoke is a method to prevent mistakes from happening, or to detect them immediately so defects do not pass to the next process Production → To prevent defect Process → Make process fool proof & Improve process reliability QC → Checks and detects and eliminates human error Management → Reduce rework & Scrap"
+Where Hardening Is Done on Crankshaft,Main journals Crank pins (rod journals) Fillet radius Thrust faces (sometimes) The fillet hardening is most critical for fatigue life.
+What Happens If Crankshaft is Not Hardened?,"❌ Bearing wear ❌ Journal scoring ❌ Crankshaft bending or cracking ❌ Low oil pressure ❌ Engine knock ❌ Early engine failure In high-performance or heavy-duty engines, failure is guaranteed without hardening."
+What Impact on Quality When Preventive Maintenance Fails?,"❌ Bearing wear ❌ Machine life poor ❌ Safety risk – Clamp failure, Oil leak ❌ Increased vibration – Tool life poor, Noise ❌ Loss of process capability – CP, CPK results ❌ Poor surface finish"
+What Is Engine Machining?,"Engine machining is the precision removal of material from engine components using CNC, SPM, VMC, turning, grinding, and honing operations to achieve accurate dimensions, geometry, and surface finish for proper engine performance. Machining converts cast/forged engine parts into finished, functional components."
+What Is casting Process?,"Casting is a manufacturing process where molten metal is poured into a mould, allowed to cool and solidify, and then removed to form a desired shape. It is mainly used for: Complex shapes Heavy components High-strength parts Near-net shape manufacturing"
+What Is the importance of N1 (First part inspection)?,"N1 is the inspection of the very first part produced after machine setup, tool change, shift start, or parameter change. It ensures the process is set correctly before full production begins."
+Why N1& N3 Is Important?,"Prevents Mass Production of Defects If the first part is wrong → entire batch will be wrong. N1 catches issues early like: Wrong offset Wrong tool Wrong program Incorrect clamping Machine zero mismatch ➡️Saves time, scrap, cost. N1 verifies: Tool offsets Program number Fixtures and clamps Tool life Correct tool path ➡️ Ensures the machine is ready for stable production. Ensures Process Stability Before Running Batch, A good N1 shows: Controlled tolerances Required surface finish Correct geometry Especially important in: Engine machining Gear machining Brake parts Transmission components"
+What Is Checked in N1?,Typical checks include: Critical and major dimensions Surface finish Fitment checks (if required) Visual and burr inspection Alignment and runout Attribute checks Poka-yoke functionality
+What Is Gear Machining Process?,"Gear machining is the manufacturing process of cutting, shaping, or finishing a gear tooth on a metal workpiece to achieve the required profile, accuracy, and surface finish for power transmission applications. Gear machining converts forged/cast gear blanks into precision gears with correct tooth form."
+Who Is Responsible for Quality Output?,"Primary responsibility - Machine operators, need to ensure SOP, N1 check, check sheet, stop when abnormality found. Production Supervisors / Line Leaders - Ensure process discipline and manpower training Process QA (Quality Assurance) - Responsible for preventing defects, not producing parts QC Inspectors (Quality Control) - Visual and burr inspection, Responsible for detecting defects. Maintenance Team - Responsible for machine health & consistency Engineering & tooling team - Responsible for process design & correctness."
+What is the main objective of Quality Month?,"To promote quality awareness, improve processes, reduce defects, and encourage employee participation in continuous improvement."
+Why is quality important in an engine plant?,"Engine quality impacts performance, reliability, fuel efficiency, customer satisfaction, and warranty cost."
+What is N1 inspection (First Part Approval)?,"Verification of the first machined part to ensure machine, tool, fixture, and program are producing correct dimensions before mass production."
+What is Poka-Yoke?,A mistake-proofing device or method designed to prevent human errors in the process.
+What is Cp and Cpk in engine machining?,Capability indices showing how consistently a process meets design tolerances.
+What is the purpose of SOP (Standard Operating Procedure)?,"To ensure that every operator follows a standardized, repeatable, and controlled method."
+What is torque-to-yield in engine assembly?,A fastening method where bolts are torqued beyond elastic limit to achieve consistent clamping.
+What happens if crankshaft hardness is low?,"High wear, bearing failure, imbalance, and reduced engine life."
+What is root cause analysis (RCA)?,A systematic method to identify the real reason behind a defect and prevent recurrence.
+What is a control plan?,"A document listing critical characteristics, inspection frequency, methods, and reaction plans."
+What is a reaction plan?,"A defined action guideline for operators during abnormalities (e.g., stop → segregate → inform → record)."
+How does preventive maintenance support quality?,"Ensures no vibration, misalignment, tool breakage, or machine errors that can cause defects."
+What is FMEA in engine plants?,Failure Mode & Effects Analysis – identifies potential failures and prevents them during design/process planning.
+What is 4M Change?,"4M = Man, Machine, Material, Method Any change must be approved and controlled to avoid quality issues."
+What is tool life monitoring?,"Tracking tool wear to prevent undersize, oversize, burrs, or surface defects."
+What is SPC?,Statistical Process Control – charts used to monitor machining stability.
+Why is coolant concentration important?,"Improper coolant leads to poor finish, corrosion, tool wear, overheating."
+What is mixed-up prevention?,"Systems to avoid mixing wrong variants, wrong components, or batch mix during machining/assembly."
+What is traceability in engine manufacturing?,"Tracking each engine or component back to machine, operator, shift, and process history."
+What is a torque audit?,Verification that fastening tools deliver accurate torque during engine assembly. 🔥 ADVANCED ENGINE QUALITY QUESTIONS
+Why is bore geometry critical in an engine block?,"Affects piston movement, oil consumption, compression, and engine efficiency."
+What is honing?,"A finishing process to achieve cylinder bore size, roundness, and surface finish (plateau finish)."
+What causes crankshaft bending?,"Improper handling, heat treatment distortion, machining stress, or fixture issues."
+What is camshaft lobe hardness important for?,Prevents wear of cam-follower interface and ensures valve timing accuracy.
+Why is valve seat concentricity critical?,Poor sealing → compression loss → engine misfire → low efficiency.
+What is porosity in casting?,"Air or gas pockets leading to leakage, failure or machining scrap."
+What is OK2Run engine?,An engine that has passed all quality checks and is ready for vehicle installation.
+What is dynamic balancing?,Reducing vibration and stress in rotating parts like crankshaft/flywheel.
+What is burr and why is it dangerous?,"Small metal projections causing assembly failure, oil flow issues, or premature wear."
+What is LPA (Layered Process Audit)?,Daily/weekly audits by multiple levels to ensure process discipline. 🚗 ENGINE PLANT QUALITY DEFECT-RELATED Q&A
+What causes undersize/oversize in machining?,"Tool wear, wrong offsets, low rigidity, thermal expansion, wrong program."
+What causes chatter marks?,"Machine vibration, loose fixtures, worn spindle bearings."
+What causes blow holes in castings?,"Gas entrapment, moisture, poor die lubrication."
+Why does rust form during machining?,"Low coolant concentration, high water hardness, improper drying."
+What causes gear hardening cracks?,"Incorrect quench rate, high carbon content, thermal stress. 🎯 TRICK QUESTIONS FOR QUALITY MONTH QUIZ"
+Who is responsible for quality?,Everyone – Operator → Supervisor → QA → Maintenance → Engineering → Management.
+What should you do when you see an abnormality?,Stop → Segregate → Inform → Record (no-running with defects).
+Is inspection equal to quality?,"No. Quality comes from process control, not inspection."
+Does 100% inspection guarantee zero defects?,"No, due to human error, fatigue, and measurement limitations."
+Which is more important: defect detection or defect prevention?,Defect Prevention is the improvement 🏅 QUALITY SYSTEM & STANDARD QUESTIONS
+What is TF 16949?,Automotive quality management system standard.
+What is a quality objective?,"Measurable target like PPM reduction, Product Zero defect quality output, OEE improvement continuously."
+What is PPM?,Defective parts per million – used to measure supplier/customer quality.
+What is COPQ?,"Cost of Poor Quality → scrap, rework, warranty cost, line stoppage."
+What is FIFO?,First In First Out for material flow. 🏭 ASSEMBLY QUALITY QUESTIONS
+What is torque angle?,Applying torque and then rotating bolt by specified angle for consistent clamping.
+Why is oil flushing done?,"Removes chips, burrs, dust from oil passages of engine."
+What is leak testing?,Checking engine block/head for air/oil/coolant leakage.
+What causes assembly mix-up?,"Similar parts, no Poka-Yoke, improper labelling, poor segregation."
+What is FTT (First Time Through)?,% of engines that pass all tests without rework or repair.
+What is a Quality Wall?,Temporary 100% inspection to contain defects and protect customer.
+What is the purpose of Gemba walk?,Go to the shopfloor → observe → identify → improve.
+What is the function of a powertrain?,"A powertrain is an assembly of every component that pushes your vehicle forward. Your car's powertrain creates power from the engine and delivers it to the wheels on the ground. The key components of a powertrain include engine, transmission, driveshaft, axles, and differentials. “The key processes of powertrain manufacturing are casting, machining, heat treatment, gear manufacturing, sub-assembly, final assembly, and end-of-line testing. Supporting processes like maintenance, tool management, and quality inspection ensure reliability and consistency."
+Impact of Not Following a Standard Operating Procedure (SOP),"Quality Defects Increase, Safety Risks to Operators, Variation in Output (Inconsistent Process), Machine Damage & Tool Breakage, Production Delay & Line Stoppage."
+Purpose of an Inspection Check Sheet (Why It Is Used?),"An inspection check sheet is a structured document used to verify that a product, process, or machine meets required standards. Its main purposes are: To Ensure Consistent Quality To Verify Critical Dimensions & Parameters To Provide Traceability To Detect Defects Early (Prevention)"
+Why Is the Gauge Calibration Required?,"Gauge calibration ensures that measuring instruments give accurate, reliable, and traceable measurements. In manufacturing—especially automotive, engine, and powertrain—even small measurement errors can lead to huge quality losses."
+What is POS?,"“POS is important because it ensures operators follow the standard process, identifies abnormalities early, improves work methods, and prevents defects. It supports SOP compliance, improves productivity, and strengthens the overall quality system.”"

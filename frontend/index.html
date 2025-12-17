@@ -1,0 +1,147 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Voice Assistant (QA)</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <style>
+    body { font-family: system-ui, -apple-system, Roboto, 'Segoe UI', Arial; padding: 18px; max-width:900px; margin:auto; }
+    h1 { font-size: 1.3rem; }
+    #log { border:1px solid #ddd; padding:12px; height:300px; overflow:auto; margin-bottom:10px; background:#fafafa; }
+    .item { margin-bottom:10px; }
+    .user { color: #0b6; }
+    .assistant { color: #06b; }
+    button { padding:8px 12px; margin-right:8px; }
+    input[type="file"]{ display:inline-block; margin-left:8px; }
+    small { color:#666; }
+  </style>
+</head>
+<body>
+  <h1>Voice Assistant (uses your /mnt/data/questions.csv)</h1>
+  <div id="log"></div>
+
+  <div>
+    <button id="startBtn">Start Listening</button>
+    <button id="stopBtn" disabled>Stop</button>
+    <button id="askBtn">Ask Text</button>
+    <input id="textInput" placeholder="Type your question here" style="width:50%" />
+  </div>
+
+  <p><small>Tip: Use Chrome on desktop for best speech recognition. The assistant will speak answers aloud.</small></p>
+
+  <script>
+  const logEl = document.getElementById('log');
+  function log(text, cls='') {
+    const d = document.createElement('div');
+    d.className = 'item ' + cls;
+    d.textContent = text;
+    logEl.appendChild(d);
+    logEl.scrollTop = logEl.scrollHeight;
+  }
+
+  // Prevent duplicate requests / repeated speech
+  let pending = false;
+  let lastSpoken = "";
+  let lastResultTime = 0; // for debounce of recog.onresult (ms)
+
+  // SpeechRecognition
+  const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+  let recog = null;
+  if (SpeechRecognition) {
+    recog = new SpeechRecognition();
+    recog.lang = 'en-US';
+    recog.interimResults = false;
+    recog.continuous = false;
+    recog.maxAlternatives = 1;
+
+    recog.onstart = () => { log('Listening... 🎤', 'user'); };
+    recog.onresult = (ev) => {
+      // debounce multiple onresult calls (ignore duplicates within 700ms)
+      const now = Date.now();
+      if (now - lastResultTime < 700) return;
+      lastResultTime = now;
+
+      const text = ev.results[0][0].transcript;
+      log('You: ' + text, 'user');
+
+      // stop recognition immediately to avoid duplicates while processing
+      try { recog.stop(); } catch(e) {}
+
+      // don't send another request if one is pending
+      if (pending) {
+        log('Already processing a question — please wait.', '');
+        return;
+      }
+      sendQuestion(text);
+    };
+
+    recog.onerror = (e) => { log('Recognition error: ' + e.error, ''); };
+    recog.onend = () => {
+      document.getElementById('startBtn').disabled = false;
+      document.getElementById('stopBtn').disabled = true;
+    };
+  } else {
+    log('SpeechRecognition not supported in this browser. Use Chrome desktop for best support.');
+  }
+
+  document.getElementById('startBtn').addEventListener('click', () => {
+    if (!recog) return;
+    try {
+      recog.start();
+      document.getElementById('startBtn').disabled = true;
+      document.getElementById('stopBtn').disabled = false;
+    } catch(e){ console.error(e); }
+  });
+  document.getElementById('stopBtn').addEventListener('click', () => { if (!recog) return; recog.stop(); });
+
+  document.getElementById('askBtn').addEventListener('click', () => {
+    const t = document.getElementById('textInput').value.trim();
+    if (!t) { log('Please type a question or use voice.', ''); return; }
+    log('You: ' + t, 'user');
+    if (pending) { log('Please wait for the previous response.', ''); return; }
+    sendQuestion(t);
+  });
+
+  async function sendQuestion(text) {
+    pending = true;
+    document.getElementById('askBtn').disabled = true;
+    document.getElementById('startBtn').disabled = true;
+    try {
+      const res = await fetch('/api/ask', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ text })
+      });
+      const data = await res.json();
+      log('Assistant: ' + data.answer + ' (score: ' + (data.score||0).toFixed(2) + ')', 'assistant');
+
+      // Avoid repeating the same spoken answer consecutively
+      if (data.answer && data.answer !== lastSpoken) {
+        lastSpoken = data.answer;
+        speak(data.answer);
+      } else {
+        log('(Skipped speaking duplicate answer)', '');
+      }
+    } catch (e) {
+      console.error(e);
+      log('Error contacting backend: ' + e.message, '');
+    } finally {
+      pending = false;
+      document.getElementById('askBtn').disabled = false;
+      document.getElementById('startBtn').disabled = false;
+    }
+  }
+
+  function speak(text) {
+    if (!('speechSynthesis' in window)) { log('No speechSynthesis available in browser.'); return; }
+    // cancel any queued utterances first
+    window.speechSynthesis.cancel();
+    const u = new SpeechSynthesisUtterance(text);
+    u.lang = 'en-US';
+    u.rate = 1.0;
+    window.speechSynthesis.speak(u);
+  }
+</script>
+
+</body>
+</html>
